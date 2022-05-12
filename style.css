@@ -61,6 +61,13 @@ header img {
   font-size: 18px;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   color: white;
+  transition: 1.5s;
+}
+.main_title .explore:hover {
+  opacity: 0.75;
+  cursor: pointer;
+  box-shadow: 4px 6px 6px 4px rgb(90, 90, 90);
+  transition: all 1.5s;
 }
 
 .nav ul {
@@ -75,6 +82,13 @@ header img {
   border-radius: 15px;
   box-shadow: 0 4px 6px 2px rgb(234, 234, 234);
   width: 95%;
+  transition: all 1.5s;
+}
+.nav li:hover {
+  background-color: rgba(147, 86, 220, 0.15);
+}
+.nav li:hover .fa-solid {
+  color: #9356DC;
 }
 .nav h2 {
   padding-left: 45px;
@@ -98,6 +112,14 @@ header img {
 .nav h1 {
   margin-left: 15px;
 }
+.nav a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
 
 .restlist {
   background-color: rgb(246, 246, 246);
@@ -118,6 +140,21 @@ header img {
   border-radius: 15px;
   margin-left: 2.5%;
   margin-bottom: 18px;
+  position: relative;
+  transition: all 1.5s;
+}
+.rest__card .newtag {
+  font-size: 12px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #99E2D0;
+  color: rgb(0, 135, 102);
+  padding: 9px;
+}
+.rest__card:hover {
+  box-shadow: 4px 6px 6px 4px rgb(234, 234, 234);
+  transition: all 1.5s;
 }
 
 .rest__img {
@@ -129,15 +166,12 @@ header img {
 
 .rest__titlebox {
   display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   margin: 0 10px;
 }
 .rest__titlebox .fa-regular {
   font-size: 22px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 7px;
   margin-right: 11px;
 }
 .rest__titlebox .fa-regular:hover {
@@ -146,6 +180,7 @@ header img {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: all 1.75s;
 }
 
 .rest__title h3 {
@@ -189,13 +224,16 @@ footer h1 {
 
 /**page menu**/
 .menu_head {
-  padding: 10px 0;
+  padding: 20px 0;
   align-items: center;
 }
 .menu_head a {
   position: absolute;
-  left: 15px;
+  left: 20px;
   color: black;
+}
+.menu_head .fa-solid {
+  font-size: 20px;
 }
 
 img {
@@ -211,8 +249,90 @@ img {
   padding: 19px;
 }
 .menu h1 {
-  margin-top: 0px;
+  margin: 0px;
   font-family: "shrikhand";
+}
+.menu__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu .fa-regular {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+  margin-right: 11px;
+}
+.menu .fa-regular:hover {
+  font-weight: bold;
+  background: linear-gradient(to right, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+.menu__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  overflow: hidden;
+  padding: 10px;
+}
+.menu__card span {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 6px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.menu__card h3 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu__card p {
+  margin-top: 8px;
+  margin-bottom: 6px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu__card:hover {
+  cursor: pointer;
+}
+.menu__card:hover .check {
+  margin-right: -10px;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  color: white;
+  font-size: 22px;
+  margin: -10px -220px -10px -10px;
+  width: 25%;
+  border-radius: 0 25px 25px 0;
+  transition: 1.5s;
+}
+
+.order {
+  border-radius: 50px;
+  border: none;
+  padding: 20px 0px;
+  width: 70%;
+  font-size: 18px;
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
