@@ -767,5 +767,10 @@ img {
     margin-bottom: 10px;
   }
 }
+@media (max-width: 375px) {
+  .menu__card span {
+    margin-right: 170px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
