@@ -1,0 +1,32 @@
+@use "./variable.scss";   
+   
+  @mixin heart-animation {
+    
+    position: relative;
+
+    &::before{
+        transition: opacity 1.5s ease;
+    }
+
+    &::after{
+        content:"\f004" ;
+        font-family: 'Font Awesome 5 Free';
+        font-weight: bold;
+        background: linear-gradient(variable.$secondary,variable.$primary);
+        -webkit-text-fill-color:transparent;
+        -webkit-background-clip: text;
+        background-clip: text; 
+        position: absolute;
+        left: 0;
+        opacity: 0;
+        transition: opacity 1.5s ease;
+    }
+
+    &:hover::before{
+        opacity: 0;
+    }
+
+    &:hover::after{
+        opacity: 1;
+    }
+}

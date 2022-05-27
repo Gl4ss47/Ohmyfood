@@ -190,7 +190,7 @@ header img {
   margin-left: 2.5%;
   margin-bottom: 18px;
   position: relative;
-  transition: all 1.5s;
+  transition: all 1s;
 }
 .rest__card .newtag {
   font-size: 12px;
@@ -203,7 +203,7 @@ header img {
 }
 .rest__card:hover {
   box-shadow: 4px 6px 6px 4px rgb(234, 234, 234);
-  transition: all 1.5s;
+  transform: scale(1.1);
 }
 
 .rest__img {
@@ -222,13 +222,29 @@ header img {
 .rest__titlebox .fa-regular {
   font-size: 22px;
   margin-right: 11px;
+  position: relative;
 }
-.rest__titlebox .fa-regular:hover {
+.rest__titlebox .fa-regular::before {
+  transition: opacity 1.5s ease;
+}
+.rest__titlebox .fa-regular::after {
+  content: "\f004";
+  font-family: "Font Awesome 5 Free";
   font-weight: bold;
-  background: linear-gradient(to right, #FF79DA, #9356DC);
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+.rest__titlebox .fa-regular:hover::before {
+  opacity: 0;
+}
+.rest__titlebox .fa-regular:hover::after {
+  opacity: 1;
 }
 
 .rest__title h3 {
@@ -313,14 +329,30 @@ img {
   align-items: center;
   margin-bottom: 7px;
   margin-right: 11px;
+  cursor: pointer;
+  position: relative;
 }
-.menu .fa-regular:hover {
+.menu .fa-regular::before {
+  transition: opacity 1.5s ease;
+}
+.menu .fa-regular::after {
+  content: "\f004";
+  font-family: "Font Awesome 5 Free";
   font-weight: bold;
-  background: linear-gradient(to right, #FF79DA, #9356DC);
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
-  cursor: pointer;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+.menu .fa-regular:hover::before {
+  opacity: 0;
+}
+.menu .fa-regular:hover::after {
+  opacity: 1;
 }
 .menu h2 {
   position: relative;
