@@ -139,7 +139,7 @@ header img {
 .nav li:hover .fa-solid {
   color: #9356DC;
 }
-.nav h2 {
+.nav h3 {
   padding-left: 45px;
   font-size: 18px;
 }
@@ -158,7 +158,7 @@ header img {
   position: absolute;
   left: -12px;
 }
-.nav h1 {
+.nav h2 {
   margin-left: 15px;
 }
 .nav a {
@@ -179,7 +179,7 @@ header img {
   text-decoration: none;
   color: black;
 }
-.restlist h1 {
+.restlist h2 {
   margin-left: 8.5px;
 }
 
