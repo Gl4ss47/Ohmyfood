@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @use "./variable.scss";   
    
   @mixin heart-animation {
@@ -28,4 +29,36 @@
     &:hover::after{
         opacity: 1;
     }
+=======
+@use "./variable.scss";   
+   
+  @mixin heart-animation {
+    
+    position: relative;
+
+    &::before{
+        transition: opacity 1.5s ease;
+    }
+
+    &::after{
+        content:"\f004" ;
+        font-weight: bold;
+        background: linear-gradient(variable.$secondary,variable.$primary);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text; 
+        position: absolute;
+        left: 0;
+        opacity: 0;
+        transition: opacity 1.5s ease;
+    }
+
+    &:hover::before{
+        opacity: 0;
+    }
+
+    &:hover::after{
+        opacity: 1;
+    }
+>>>>>>> 5b6dafd14d24912f61831cc96c3930b7e20db5ea
 }
