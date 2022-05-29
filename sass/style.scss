@@ -128,7 +128,7 @@ header{
         position: relative;
         transition: background-color 1.5s;
         &:hover{
-            background-color: rgba(variable.$primary, $alpha: 0.15);
+            background-color: rgba(variable.$primary, 0.15);
             .fa-solid{
                 color: variable.$primary;
             }
@@ -519,6 +519,11 @@ body{
         margin-right: 20px;
     }
 }
+.menu__card{
+    span{
+        margin-right: 30px;
+    }
+}
 .order{
     width: 40%;
     margin-top: 50px;
@@ -741,7 +746,7 @@ footer{
 @media (max-width: 375px) {
     .menu__card{
         span{
-            margin-right: 30px;
+            margin-right: 35px;
         }
     }
 }
