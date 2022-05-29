@@ -229,7 +229,6 @@ header img {
 }
 .rest__titlebox .fa-regular::after {
   content: "\f004";
-  font-family: "Font Awesome 5 Free";
   font-weight: bold;
   background: linear-gradient(#FF79DA, #9356DC);
   color: transparent;
@@ -337,7 +336,6 @@ img {
 }
 .menu .fa-regular::after {
   content: "\f004";
-  font-family: "Font Awesome 5 Free";
   font-weight: bold;
   background: linear-gradient(#FF79DA, #9356DC);
   color: transparent;
